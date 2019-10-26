@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c71010"
+    android:orientation="vertical"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Form"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name : "
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:inputType="textPersonName"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name : "
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:inputType="textPersonName"
+
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender : "
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/gender"
+                >
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    />
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    />
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group : "
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                />
+
+            <Spinner
+                android:id="@+id/blood_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/blood_group"
+                >
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Date Of Birth : "
+                android:textSize="15dp"
+                />
+            <EditText
+                android:id="@+id/setDate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:inputType="datetime"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:text="District : "
+                />
+            <Spinner
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/district"
+                >
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                android:text="Address : "
+                />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:inputType="text"
+
+                />
+        </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="horizontal"
+               android:layout_marginLeft="10dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   android:text="Email Id : "
+                   />
+               <EditText
+                   android:id="@+id/email_id"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textEmailAddress"
+                   android:textColor="#FFF"
+                   />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_marginLeft="10dp"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   android:text="Phone No : "
+
+                   />
+               <EditText
+                   android:id="@+id/phone_no"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="numberDecimal"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   />
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="horizontal"
+               android:layout_marginLeft="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   android:text="User Name : "
+                   />
+               <EditText
+                   android:id="@+id/username_registration"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="horizontal"
+               android:layout_marginLeft="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   android:text="Password : "
+                   />
+               <EditText
+                   android:id="@+id/password_registration"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPassword"
+                   android:textColor="#FFF"
+                   android:textSize="15dp"
+
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="horizontal"
+               android:layout_marginLeft="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="50dp"
+                   android:textSize="15dp"
+                   android:textColor="#FFF"
+                   android:text="Confirm Password : "
+                   />
+               <EditText
+                   android:id="@+id/confirm_password_registration"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPassword"
+                   android:textColor="#FFF"
+                   android:textSize="15dp"
+
+                   />
+
+           </LinearLayout>
+           <Button
+               android:id="@+id/sign_up_bt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="#FFF"
+               android:textSize="15dp"
+               android:text="Sign Up"
+               android:background="@color/colorPrimaryDark"
+               android:layout_marginLeft="250dp"
+               />
+
+       </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

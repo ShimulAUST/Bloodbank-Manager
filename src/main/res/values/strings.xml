@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Blood Bank Manager</string>
+
+    <string-array name="blood_group">
+        <item>O+</item>
+        <item>A+</item>
+        <item>AB+</item>
+        <item>O-</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+    </string-array>
+
+
+    <string-array name="district">
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Sylhet</item>
+        <item>Rangpur</item>
+        <item>Manikgonj</item>
+        <item>Gazipur</item>
+        <item>Nator</item>
+        <item>Nilphamari</item>
+        <item>Soidpur</item>
+        <item>Dinajpur</item>
+        <item>Khagrachori</item>
+        <item>Chittagong</item>
+        <item>Rangamati</item>
+        <item>Magura</item>
+        <item>Norail</item>
+    </string-array>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>

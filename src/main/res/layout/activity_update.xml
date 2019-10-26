@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Username &amp; Password"
+        android:textColor="#000"
+        android:textSize="30dp"
+
+
+        />
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/oldusername"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="Enter your Username"
+        />
+    <EditText
+        android:id="@+id/newusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:inputType="text"
+        android:hint="Enter your New Username"
+        />
+    <EditText
+        android:id="@+id/oldpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:inputType="textVisiblePassword"
+        android:hint="Enter your Password"
+        />
+    <EditText
+        android:id="@+id/newpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:textSize="15dp"
+        android:hint="Enter your New password"
+        />
+    <EditText
+        android:id="@+id/confirmnewpass"
+        android:layout_width="match_parent"
+        android:inputType="textVisiblePassword"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="Confirm Password"
+        />
+
+    <Button
+        android:id="@+id/update_usenameandpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#271559"
+        android:textColor="#FFF"
+        android:text="UPDATE"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        />
+
+</LinearLayout>
